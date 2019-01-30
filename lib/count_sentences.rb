@@ -16,10 +16,7 @@ class String
 
   def count_sentences
     count = 0 
-    sentences = (self.sentence?).size 
-    questions = self.question?.count 
-    exclamations = self.exclamation?.count 
-    count = sentences + questions + exclamations 
+    count = self.split(/\.|\?|!/).length
     count 
   end
   
