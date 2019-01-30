@@ -20,6 +20,7 @@ class String
     questions = self.question?.count 
     exclamations = self.exclamation?.count 
     count = sentences + questions + exclamations 
+    count 
   end
-  count 
+  
 end
