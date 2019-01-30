@@ -15,6 +15,11 @@ class String
   end
 
   def count_sentences
-    count =
+    count = 0 
+    sentences = self.sentence?.count
+    questions = self.question?.count 
+    exclamations = self.exclamation?.count 
+    count = sentences + questions + exclamations 
   end
+  count 
 end
